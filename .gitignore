@@ -1,0 +1,15 @@
+*.~*~
+*.exe
+*.pdb
+*.bak
+run.bat
+*.xlsx
+*.xls
+obj/
+lib/
+bin/
+.vs/
+wip/
+.sonarqube/
+UpgradeLog.htm
+AI/CUI/Program.cs
