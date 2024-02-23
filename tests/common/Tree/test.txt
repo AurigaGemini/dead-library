@@ -1,0 +1,11 @@
+﻿
+オプションウィンドウ {
+　width=25%, height=25%,
+　下地 { x=0, y=0, z=0, width=100%, height=100%, file=option_back.png, type=image }
+　タイトルバー { x=10, y=5, z=1, width=90%, height=10%, file=option_title_bar.png, type=titlebar }
+　閉じるボタン { type=button, help=閉じる }
+　ディスプレイ {}
+　オーディオ {}
+　コントロール {}
+　その他 {}
+}
