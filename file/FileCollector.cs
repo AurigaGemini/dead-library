@@ -92,7 +92,7 @@ sealed public class Collector {
 	 *        1. OnFinished デリゲートが Invoke される。@n
 	 *        2. IsCompleted が true を返す。@n
 	 *        3. HasError が true を返す。@n
-	 *        4. IsCompletedOrHasError が true を返す。
+	 *        4. IsStopped が true を返す。
 	 *
 	 * @param search_paths   = 収集を行うディレクトリ(フォルダ)のリスト。@n
 	 *                         ディレクトリを指定した場合、直下にあるディレクトリを再帰的に調べる。@n
@@ -103,6 +103,7 @@ sealed public class Collector {
 	 * @param on_finished    = 収集が終わったときに呼び出すメソッド。@n
 	 *                         成功しても失敗しても呼び出される。@n
 	 *                         成功時は IsCompleted が true になり、失敗時は HasError が true になる。
+  	 *                         Cancel メソッドで中断した場合は IsCanceled が true になる。
 	 */
 	public Task Start(List<string> search_paths, string file_extention = "", OnFinished on_finished = null) {
 		if (this.canceler != null) {
