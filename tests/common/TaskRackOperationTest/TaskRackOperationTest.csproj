@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\ID.cs" Link="ID.cs" />
+    <Compile Include="..\..\Task\TaskRack.cs" Link="TaskRack.cs" />
+  </ItemGroup>
+
+</Project>
